@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            color: brown;
+        }
+    </style>
+</head>
+<body>
+    <h1>This is heading tag</h1>
+    <script>
+        // console.log("Hello world!")
+        // alert("Hello everyone")
+        // document.write("Javascript")
+
+// * Datatypes in JAVASCRIPT
+
+// -number
+// -string
+// -Boolean
+// -object
+// -undefined
+// -null
+// -symbol
+
+
+
+// * 3 keywords
+
+// *********var***********
+
+// hosting variable
+// global declare 
+// {
+//     var a=10
+// }
+// console.log(a)
+
+// redeclare and reassign possible
+
+// *********let***********       ----introduced in ECMA script 6 in 2015
+
+// local declare    -----limited in scope
+
+// {
+//     let b=20
+//     console.log(b)
+// }
+
+// possible not to redeclare 
+
+// but can be reassign
+
+
+// let b=10         -----not possible
+// let b=20
+
+
+// let b=10         ----possible
+// b=20
+
+
+// ********const*********     ----introduced in ECMA script 6 in 2015
+
+// local declare  
+
+// redeclare and reassign not possible
+
+// var i=10
+
+// for(var i=0;i<5;i++){
+
+// }
+// console.log(i)
+
+// output()
+
+// function output(){
+//     console.log("Hello")
+// }
+
+// console.log(10<5)
+// console.log(5<=5)
+// console.log('A'>'B')
+// console.log('a'<'b')
+// console.log('5'==5)       //only value compare
+// console.log('5'===5)      //datatype also compare
+
+// let a=5
+// let b=6
+// let c=2
+// let d=9
+
+
+
+// if(a>b){
+//     if(a>c){
+//         if(a>d){
+//             console.log(a)
+//         } 
+//     }
+// }
+
+// if(b>a){
+//     if(b>c){
+//         if(b>d){
+//             console.log(b)
+//         } 
+//     }
+// }
+
+// if(c>a){
+//     if(c>b){
+//         if(c>d){
+//             console.log(c)
+//         } 
+//     }
+// }
+
+// if(d>a){
+//     if(d>b){
+//         if(d>c){
+//             console.log(d)
+//         } 
+//     }
+// }
+
+
+// let a = 5;
+// let b = 6;
+// let c = 2;
+// let d = 9;
+
+// let max = a;
+
+// if (b > max) {
+//     max = b;
+// }
+
+// if (c > max) {
+//     max = c;
+// }
+
+// if (d > max) {
+//     max = d;
+// }
+
+// console.log("The maximum value is: " + max);
+
+
+
+// console.log(a=11)
+// let a;                  ------------let and const are not hosting variable
+
+// console.log(a=11)
+// var a;                  ------------var is hosting variable   
+
+// function sum(x,z=30){                        //parameter
+//     console.log(x+z)
+// }
+
+// sum(10,20)                               //argument
+
+// ************** functions in javascript
+   
+//    ****naming function
+//    ****anonymous function                //IIFE-- immediately invoked function exoression      this pointer can be used
+//    ****arrow function                   //this pointer cannot be used
+
+
+// (function(a,b){
+//     console.log("Hello",a+b)
+// })(11,22)
+
+// (function(p,q){
+//     console.log(`Hello ${p+q}`)
+// }) (11,22)
+
+
+// let f1 = function(a,b){
+//     console.log(a+b)
+// }
+
+
+// (()=>{
+//     console.log("Hello")
+// }) ()
+
+// let f2=(a,b)=>a+b
+// console.log(f2(10,220))
+
+
+// function outer(){
+//     let a=10;
+//     let b=20;
+
+//     function inner(){
+//         console.log(a+b)
+//     }
+
+//     return inner;
+// }
+
+// let ans=outer();
+// ans()                 //returns with lexical scoping (surrounding environment)
+
+
+// function output(x,y,z){
+//     z(x,y)
+    
+// }
+
+// function add(a,b){
+//     console.log(a+b)
+// }
+
+// output(10,20,add)
+
+
+function output(f1){
+    f1()
+}
+
+output(function(){
+    console.log("hello")
+})
+    </script>
+</body>
+</html>
+
