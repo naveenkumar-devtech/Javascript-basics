@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #textarea{
+            padding: 20px;
+            height: 300px;
+            width: 30%;
+            border: 3px solid black;
+            font-size: 30px;
+            display:block;
+        }
+        #write{
+            height: 40vh;
+            width: 60%;
+            border: 3px solid black;
+            margin-top: 5vh;
+            font-size: 50px;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <textarea name="" id="textarea"></textarea>
+    <textarea name="" id="write"></textarea>
+
+    <script>
+       document.getElementById("textarea").oninput=function(){
+        let text=document.getElementById("textarea").value;
+        document.getElementById("write").innerText=text
+       }
+
+    //    document.getElementById("textarea").oninput=function(){
+    //     let text=document.getElementById("textarea").value;
+    //     document.getElementById("write").innerHTML=`<h1>${text}</h1>`
+    //    }
+
+
+    </script>
+</body>
+</html>
