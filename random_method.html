@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            align-items: center;
+            justify-content: center;
+            display: flex;
+        }
+        input{
+            font-size: 80px;
+            margin-top: 300px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" disabled>
+    <!-- <button>Generate</button> -->
+
+    <script>
+        // document.querySelector("button").onclick=function(){
+        //     let color=document.querySelector("input").value=Math.floor(Math.random()*255)+","+Math.floor(Math.random()*255)+","+Math.floor(Math.random()*255)
+        //     document.querySelector("input").value=color
+        //     document.body.style.backgroundColor=`rgb(${color})`}
+            // console.log(document.querySelector("input").value)
+
+            setInterval(() => {
+                let color=document.querySelector("input").value=Math.floor(Math.random()*255)+","+Math.floor(Math.random()*255)+","+Math.floor(Math.random()*255)
+            document.querySelector("input").value=color
+            document.body.style.backgroundColor=`rgb(${color})`
+            }, 100);
+
+        
+    </script>
+</body>
+</html>
