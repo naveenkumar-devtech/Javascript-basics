@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = [10,20,30,"raj",true,3.9,55,88,44,11,11]
+        // console.log(a)
+
+        // for(let i in a){
+        //     console.log(i)         //gives index
+        // }
+
+        // for(let i of a){
+        //     console.log(i)              //give value of index
+        // } 
+
+        // a.forEach((item,indexing)=>{
+        //     console.log(item,indexing)
+        // })
+
+        // ************Array methods*****************
+
+            //1 push ----to push element on last index
+            //2 pop  ----to remove element from last index
+            //3 unshift  --- insert to 0th index 
+            //4 shift    ----remove from 0th index
+            //5 slice   ---- give a slice of original array in a new array....no change in original array
+            //6 splice  ---- splice(index,removein, newelement)   makes change in the original array]
+            //7 map 
+            //8 filter
+            //9 reduce
+            //10 flat
+            //11 split
+            //12 join
+
+        // ++++ push ++++
+
+        a.push(1000)
+        console.log(a)
+
+
+        // +++++ pop +++++
+
+        a.pop()
+        console.log(a)
+
+        // ++++++unshift+++++     push from starting
+
+        a.unshift("starting")
+        console.log(a)
+        
+
+        // +++++ shift +++++        pop from starting
+
+        a.shift()
+        console.log(a)
+
+
+        // ++++ slice ++++
+
+
+        // (start,end)
+        // ----flow is from left to right 
+        // does not change original array 
+
+
+
+        console.log(a.slice(-2,-8))          //will give empty string
+
+
+        // +++++ splice +++++
+
+        // (index,removen,new_element)
+        // changes original array
+
+        a.splice(-2,2,false)
+
+        console.log(a)
+
+
+        // ++++++++++ map ++++++++++
+
+        // not change original array 
+
+
+        // let b = a.map((item)=>{
+        //     return item*2
+        // })
+
+        let b = a.map((item)=>item*2)
+
+        // let b=[]
+
+        // for(let i of a){
+        //     b.push(i*2)
+        // }
+
+        console.log(a)
+        console.log(b)
+
+
+        // ++++++++++ filter ++++++++++
+
+
+        let c=[1,2,3,4,5,6,7,8,9,10]
+
+        let d=c.filter((item)=>item>5)
+
+        console.log(d)
+
+
+        // d=[]
+
+        // for(let i of c){
+        //     if(i>5){
+        //         c.push(i)
+        //     }
+        // }
+
+
+        // ++++++++ reduce  ++++++++
+
+        let e=[1,2,3,4,5,6,7,8,9,10]
+
+        // let g = e.reduce((x,y)=>{
+        //     return x+y
+
+        // })
+        
+        let g = e.reduce((x,y)=> x+y)
+        console.log(g)
+
+
+        let p = [10,2,[34,545,[true,1.4,55],434,343,34,43,43],79,97]
+
+        console.log(p[2][2][0])
+
+
+
+        // +++++++++ flat ++++++++++
+
+        // converts the dimension of array (converts 2d to 1d , 3d to 1d  ****default is 2d to 1d)
+
+        console.log(p.flat(2))     //2 arguments indicates coversion first 3d to 2d then 2d to 1d
+
+        let q="10,20,30,40,50,60,70,80,90"
+        console.log(q)
+        console.log(typeof q)
+        let h=q.split(",")
+        console.log(h)
+
+        // ++++++++ join ++++++
+
+        let n=h.join("-")
+        console.log(n)
+
+
+
+         
+
+
+        
+
+
+    </script>
+</body>
+</html>
